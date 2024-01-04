@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width:max-content;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../images/1920-x-1080-gaming-cyberpunk-city-a2ho6vmdryz2x419.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    isolation: isolate;
+  }
+
+  .container::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: #192946;
+    opacity: .8;
+  }
+  
+  .hero h1 {
+    color: #720985;
+    font-size: 80px;
+    text-align:center;
+  }
+  
+  .content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction:column;
+  }
+  
+  .texto {
+    color: #00ffff;
+    font-size: 20px;
+    justify-content: first baseline;
+    align-items: first baseline;
+    line-height: 1.8;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+  }
+
+  a {
+    text-decoration: none;
+    color: #eb27fd;
+    transition: color .3s;
+    cursor: pointer;
+  }
+
+  .book {
+    display: flex;
+    width: 13%;
+    height: 50%;
+    padding-left: 44%;
+  }
+
+  .film {
+    display: flex;
+    width: 25%;
+    height: 20%;
+    padding-left: 39%;
+  }
+
+  .series {
+    display: flex;
+    width: 25%;
+    height: 20%;
+    padding-left: 39%;
+  }
+
+  .game {
+    display: flex;
+    width: 25%;
+    height: 20%;
+    padding-left: 39%;
+  }
+  
+  .call-to-action {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .call-to-action a {
+    color: #d800ff;
+    background-color: #6215f3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .neon-title {
+    color: #c44cda;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .neon-title::after {
+    content: "Cyberpunk";
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 15%;
+    animation: neon 0.7s linear infinite;
+    text-align:center;
+  }
+  
+  @keyframes neon {
+    0% {
+      color: #9f17b8;
+    }
+    50% {
+      color: #910d7f;
+    }
+    100% {
+      color: #a534b9;
+    }
+  }
